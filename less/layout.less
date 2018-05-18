@@ -1,0 +1,52 @@
+html, body {
+    font-family: 'Ubuntu', sans-serif;
+}
+
+h1, h2, h3, h4, h5 {
+    font-family: 'Russo One', sans-serif;
+    color: @secondary-color;
+}
+
+.container-fluid {
+    background-color: @main-color;
+    border-bottom: 2px double @accent-color;  
+    // Used opacity mixin to give a slightly transparent background while you scroll 
+    .opacity(.85)
+}
+
+.logo-heading {
+    padding-top: 10px;
+    margin: 0;
+}
+
+
+.nav {
+    a {
+        color: @secondary-color;
+
+        &:hover {
+            text-decoration: underline;
+        }
+    }
+}
+
+.custom-border {
+    // used border-radius on a custom class to update my images.
+    .border-radius(15px);
+}
+
+.container {
+    max-width: 800px;
+}
+
+.footer {
+    color: @secondary-color;
+    background: @main-color;
+    padding: 20px 0;
+    border: 1px double @accent-color;
+}
+
+.btn-custom {
+    background-color: @secondary-color;
+    color: @main-color;
+}
